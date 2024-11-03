@@ -1,3 +1,4 @@
+#comment
 #Arrays are one of the most commonly-used data structures
 #The elements of an array are stored in contiguous memory locations
 #Arrays are of two types : Static and Dynamic
