@@ -7,10 +7,10 @@ print ("1. exchange JOD to ILS")
 print ("2. exchange USD to ILS\n")
 q = input ("select the conversation number: ")
 
-def read():
+def exchange():
     if q == "1":
         print ("you selected to exchange JOD to ILS")
-        w = float(input("enter the amount of JOD you want to exchange: \n"))
+        w = float(input("enter the amount of JOD you want to exchange: "))
         print (" it's equal " ,w*5.3 ,"JOD")
 
     elif q == "2":
@@ -20,7 +20,11 @@ def read():
         
     else :
         Print("wrong number , please try again")
-read()
+
+    total = float(0.0)
+    
+    return total
+exchange()
 print ("thank you for using our service")
 print ("see you next time")
 print ("**********************************")
