@@ -18,3 +18,17 @@ class Node:
     def __init__(self, e):
         self.element = e
         self.next = None
+
+    def insert(self, index, e):
+        if index == 0:
+            self.addfirst(e)
+        elif index >= self.__size:
+            self.addlast(e)
+        else:
+            current = self.__head
+            for i in range(1, index):
+                current = current.next
+            temp = current.next
+            current.next = Node(e)
+            (current.next).next = temp
+            self.__size += 1
